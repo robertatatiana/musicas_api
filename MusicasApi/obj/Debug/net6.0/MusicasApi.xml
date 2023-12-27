@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MusicasApi</name>
+    </assembly>
+    <members>
+        <member name="M:MusicasApi.Controllers.MusicController.CreatedMusic(MusicasApi.Data.DTOs.CreatedMusicDto)">
+            <summary>
+            Adiciona uma música no banco de dados
+            </summary>
+            <param name="musicaDto">Objeto com campos necessários para criação de uma música</param>
+            <returns>IActionResult</returns>
+            <response code="201">Adição feita com sucesso</response>
+        </member>
+        <member name="M:MusicasApi.Controllers.MusicController.GetMusicById(System.Int32)">
+            <summary>
+            Busca uma música pelo id
+            </summary>
+            <param name="id">Id da música que deseja buscar do banco de dados</param>
+            <returns>IActionResult</returns>
+            <response code="200">Música retornada com sucesso</response>
+            <response code="404">Músicanão encontrada</response>
+        </member>
+        <member name="M:MusicasApi.Controllers.MusicController.UpdateMusic(System.Int32,MusicasApi.Data.DTOs.UpdateMusicDto)">
+            <summary>
+            Atualiza música utilizando o seu Id
+            </summary>
+            <param name="id">Id da música que deseja atualizar</param>
+            <param name="musicDto">Objeto com os campos necessários para atualização de música</param>
+            <returns>IActionResult</returns>
+            <response code="200">Música retornada com sucesso</response>
+            <response code="404">Músicanão encontrada</response>
+        </member>
+        <member name="M:MusicasApi.Controllers.MusicController.DeleteMusic(System.Int32)">
+            <summary>
+            Deleta música utilizando seu Id
+            </summary>
+            <param name="id">Id da música que deseja deletar</param>
+            <returns>IActionResult</returns>
+            <response code="200">Música retornada com sucesso</response>
+            <response code="404">Músicanão encontrada</response>
+        </member>
+        <member name="T:MusicasApi.Migrations.CreateDatabaseMusic">
+            <inheritdoc />
+        </member>
+        <member name="M:MusicasApi.Migrations.CreateDatabaseMusic.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MusicasApi.Migrations.CreateDatabaseMusic.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MusicasApi.Migrations.CreateDatabaseMusic.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
